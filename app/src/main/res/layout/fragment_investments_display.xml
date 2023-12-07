@@ -6,20 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".investments.InvestmentsDisplay">
 
-    <!-- TODO: Update blank fragment layout -->
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/investment_list"
+        android:layout_width="409dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="348dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:itemCount="10"
+        tools:listitem="@layout/investment_list_item" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="341dp"
-        android:text="Investments fragment"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="141dp"
+        android:text="TEST"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/investment_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>
